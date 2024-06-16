@@ -1,0 +1,47 @@
+======================================================
+              Library Management System 
+======================================================
+
+1. Introduction:
+   This code implements a library management system in C, allowing users to perform various operations such as adding and removing books, borrowing and returning books, tracking overdue books, and printing information about books and borrowers.
+
+2. Libraries Used:
+   - stdio.h
+   - stdlib.h
+   - string.h
+   - time.h
+
+3. Data Structures:
+   - Book
+   - Borrower
+   - BorrowedBook
+   - HashTable
+
+4. Functions:
+   - hash(int key)
+   - create_book(int book_id, char* title, char* author)
+   - create_borrower(int borrower_id, char* name)
+   - insert_book(HashTable* table, Book* book)
+   - insert_borrower(HashTable* table, Borrower* borrower)
+   - find_book(HashTable* table, int book_id)
+   - find_borrower(HashTable* table, int borrower_id)
+   - remove_book(HashTable* table, int book_id)
+   - remove_borrower(HashTable* table, int borrower_id)
+   - lend_book(HashTable* table, int borrower_id)
+   - return_book(HashTable* table, int book_id, int borrower_id)
+   - track_overdue_books(HashTable* table)
+   - print_borrowed_books(BorrowedBook* borrowed_books)
+   - print_borrowers(HashTable* table)
+   - print_books(HashTable* table)
+   - menu(HashTable* table)
+
+5. Main Function:
+   Initializes the hash table.
+   Inserts sample data (books) into the hash table.
+   Calls the menu function to start the interactive menu interface.
+
+6. Sample Data:
+   Sample books are inserted into the hash table for demonstration purposes.
+
+7. Conclusion:
+   This code provides a comprehensive implementation of a library management system in C, demonstrating the use of custom data structures, hash tables, and various operations for managing books and borrowers effectively.
